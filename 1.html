@@ -1,0 +1,951 @@
+
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<meta http-equiv="pragma" content="no-cache">
+<title>Portal Peruano Sociedad y Parlamento</title>
+<link rel="stylesheet" type="text/css" href="/CSS/cat-conozca.css">
+<link rel="stylesheet" type="text/css" href="/CSS/content.css">
+<link rel="stylesheet" type="text/css" href="/mociones/CSS/mocion.css">
+<script language="javaScript" src="/includes/common.js"></script>
+<script language="javaScript" src="/includes/index.js"></script>
+<script language="javaScript" src="/includes/opt_organiza.inc"></script>
+<script language="javaScript" src="/includes/jslegis.js"></script>
+
+
+
+<script>
+function Legislatura(){
+  var sPagina;
+  var aux=self.document.frmPleno1.Legislatura.options[self.document.frmPleno1.Legislatura.selectedIndex].value;
+  document.frmPleno.C_Legislatura.value = aux;
+  document.location.href = "mocion2011.asp?lg=" + aux;
+return;
+}
+function EnviaPeriodo(){
+  Legislatura();
+  //document.frmPleno1.submit();
+
+return;
+}
+
+function BuscarMocion()
+{
+	var texto;
+	var sPagina;
+	texto = frmPleno1.textobuscar.value;
+	if (texto!="") {
+		//frmPleno1.action='mociondetalle2011.asp?CP=' + 2011 + '&NM=' + texto;
+		var win;
+		win = window.open( 'mociondetalle2011.asp?CP=' + 2011 + '&NM=' + texto,'windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=680,height=480')
+		}
+}
+function Validar_Envio(MiEvento)
+{
+	if(MiEvento.keyCode==13)
+	{
+		BuscarMocion();
+	}
+	
+}
+</script>
+
+
+<!-- ANALISIS GOOGLE -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-174309-25']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<!-- FIN ANALISIS GOOGLE -->
+
+</head>
+<BODY LEFTMARGIN=0 TOPMARGIN=0 MARGINHEIGHT=0 MARGINWIDTH=0 BGCOLOR="#FFFFFF">
+<script language="javascript">PrintHeader();</script>
+<script language="javascript">ColumnLeft(1,numCategorias,1)</script>
+
+
+
+<!--<form name="frmPleno1" id="frmPleno" action="mocion2011.asp?lg=" method="post">-->
+<form name="frmPleno1" id="frmPleno" method="post">
+  <div align="center">
+  <input type="hidden" id="C_Periodo" name="C_Periodo">
+  <input type="hidden" id="C_Legislatura" name="C_Legislatura">
+    
+    <img src="http://www.congreso.gob.pe/n-imagenes/T-MOCIONES-ORDEN-DIA.gif " border="0">  </div>
+<center>
+      <p><a href="mocion2001.asp"> Ver mociones del periodo 2001-2006</a> <br>
+        <a href="mocion2006.asp">Ver mociones del periodo 2006-2011</a><br>        
+      </p>
+    <p>
+	<table border='0' width=580>
+	<tr>
+	    <td width=350>&nbsp;&nbsp;</td>
+        <td>N&uacute;mero:&nbsp;</td>
+        <td><input type="text" name="textobuscar" value="" size="5" onKeyDown="Validar_Envio(event)">
+          &nbsp;</td><td valign="middle"><input name="buscar" 	value="Buscar" type="button" dir="ltr" onClick=BuscarMocion() ;></td>
+	</tr>
+	</table>
+  </center>
+<br>
+
+		<table width="580" border="0" cellpadding="0" cellspacing="0" align="center">
+		<tr height="1"><td colspan="10" bgcolor="navy"></td></tr>
+		<tr align="center" bgcolor="#efefef" height=25>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width="70"  class='menu1' >FECHA</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width="50"  class='menu1' >NÚMERO</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width="70"  class='menu1' >ESTADO</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td  class='menu1'>SUMILLA</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width="150"  class='menu1' >AUTOR(ES)</td>
+		</tr>
+		<tr height="1"><td colspan="8" bgcolor="ffffff"></td></tr>
+
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>11/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10063</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10063','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la Cruz Roja Peruana por conmemorar el 17 de abril de 2014 su 135º aniversario de vida institucional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Merino De Lama Manuel Arturo</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>11/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10062</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10062','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Pachamarca de la provincia de Churcampa, departamento de Huancavelica, por celebrar el 23 de abril su 49º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Monterola Abregu, Wuilian Alfonso</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>11/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10061</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10061','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Seclla de la provincia de Angaraes, departamento de Huancavelica, por celebrar el 15 de abril su 59º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Monterola Abregu, Wuilian Alfonso</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>11/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10060</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10060','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a los pobladores del distrito de Chojata de la provincia de General Sánchez Cerro, del departamento de Moquegua, que el 22 de abril conmemora su 58º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Zeballos Salinas, Vicente Antonio</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>11/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10059</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10059','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saludar y felicitar a todos los psicólogos del Perú, por celebrar el 30 de abril el Día del Psicólogo, reconociendo en ellos el rol fundamental que desempeñan en la búsqueda del bienestar del ser humano y de la sociedad.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Romero Rodriguez, Eulogio Amado</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>11/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10058</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10058','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de La Unión, provincia de Tarma, departamento de Junín, por conmemorar el 30 de abril 78 años de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Hurtado Zamudio Jesús Pánfilo</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>10/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10057</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10057','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Interpelar a Walter Albán Peralta, Ministro del Interior, para que informe a la representación nacional sobre las graves irregularidades que estarían cometiendo a través de la Oficina Nacional de Gobierno Interior (ONAGI) en el ejercicio de las funciones de los gobernadores, así como sobre otros temas relacionados a su sector, conforme al pliego interpelatorio  que se adjunta de 20 preguntas. (Total de congresistas firmantes 21)</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Aguinaga Recuenco Alejandro,
+Bardalez Cochagne, Aldo Maximiliano,
+Ccama Layme, Francisco,
+Chihuán Ramos, Leyla Felicita,
+Cordero Jon Tay María Del Pilar,
+Díaz Dios Juan José,
+Fujimori Higuchi Kenji Gerardo,
+Grandez Saldaña, Víctor Raúl,
+Hurtado Zamudio Jesús Pánfilo,
+Kobashigawa Kobashigawa, Ramón,
+López Córdova María Magdalena,
+Medina Ortiz, Antonio,
+Neyra Huamaní Rofilio T,
+Neyra Olaychea Ángel,
+Pariona Galindo Federico,
+Reátegui Flores Rolando,
+Sarmiento Betancourt Freddy Fernando,
+Tan de Inafuko Aurelia,
+Tapia Bernal Segundo Leocadio,
+Vacchelli Corbetto Gian Carlo,
+Valqui Matos, Néstor Antonio</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>10/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10056</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10056','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda todos los efectivos integrantes de la División de Emergencia de la Región Policial de Lima por conmemorar su 37º aniversario de creación.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Gastañadui Ramírez Santiago</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>10/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10055</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10055','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saludar a la Cámara de Comercio de Lima por conmemorar el 20 de abril de 2014 el 126 aniversario de su creación, contribuyendo al desarrollo socio económico de la nación a través de sus fines institucionales.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Bedoya de Vivanco Javier,
+Beingolea Delgado, Alberto Ismael,
+Galarreta Velarde Luis Fernando,
+Pérez Tello De Rodríguez María Soledad</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>10/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10054</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10054','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saludar y felicitar a la Hermandad del Señor del Santo Sepulcro de Yanahuara, Arequipa, por conmemorar el sexagésimo octavo aniversario de fundación, ocurrida el 23 de abril de 1946.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Delgado Zegarra Jaime Ricardo</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>10/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10053</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10053','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Exhortar al Poder Ejecutivo para que de forma urgente y mediante Decreto Supremo disponga el incremento sustancial de las escalas remunerativas de los profesores de la educación básica en todas sus modalidades, niveles y ciclos, y profesores de la educación técnico productivo, incluyendo para todo efecto a los auxiliares de educación.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>De La Torre Dueñas Hernán,
+Espinoza Rosales Rennan Samuel,
+Lescano Ancieta Yonhy,
+Rimarachin Cabrera Jorge,
+Simon Munaro, Yehude,
+Zeballos Salinas, Vicente Antonio</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>10/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10052</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10052','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a todos los funcionarios y trabajadores del Banco de Crédito del Perú por celebrar su aniversario el 09 de abril.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Teves Quispe Julia</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>10/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10051</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10051','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a las autoridades del distrito de Yanque, provincia de Caylloma, departamento de Arequipa, por conmemorar el 10 de abril de 2014 su 148º aniversario de creación política de su distrito.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Falconí Picardo Marco Tulio</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>10/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10050</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10050','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la provincia de Huamanga, región Ayacucho, por celebrar el 25 de abril los 474º aniversario de fundación histórica.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Acha Romani Walter</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>10/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10049</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10049','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saludar y felicitar a la población del distrito de Yanque, provincia de Caylloma, por celebrar el 10 de abril su 148º aniversario.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Solórzano Flores Ana María</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>10/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10048</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10048','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al Centro de Documentación Defensa y Apoyo al Folklore - CENDAF, por celebrar el 01 de marzo de 2014 sus 40 años de creación institucional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Portugal Catacora Mariano Eutropio</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>10/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10047</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10047','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la Provincia Constitucional del Callao, con motivo de su elevación de rango de Provincia Litoral a Provincia Constitucional del Callao, por sus 157 años de creación política, el 22 de abril de 2014.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Canches Guzmán Rogelio Antenor</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>10/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10046</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10046','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda y reconoce al profesional arqueólogo por celebrar el 11 de abril  el "Día del Arqueólogo Peruano".</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Salgado Rubianes, Luz Filomena</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>09/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10045</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10045','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la provincia de Chupaca, departamento de Junín, por conmemorar el centésimo trigésimo segundo aniversario de la Batalla de Chupaca; pueblo luchador, pujante, comprometido con las causas justas sociales.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Huaire Chuquichaico Casio Faustino</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>09/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10044</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10044','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Cullhuas, provincia de Huancayo, departamento de Junín, por la conmemoración de su 60º aniversario de creación política, el 23 de abril de 1954; pueblo luchador, pujante, comprometido con las causas justas sociales.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Huaire Chuquichaico Casio Faustino</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>09/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10043</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10043','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Chacapampa, provincia de Huancayo, departamento de Junín, por la conmemoración de su 55º aniversario de creación política, el 15 de abril de 1959; pueblo luchador, pujante, comprometido con las causas justas sociales.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Huaire Chuquichaico Casio Faustino</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>09/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10042</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10042','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de La Unión, provincia de Tarma, departamento de Junín, por la conmemoración de su 68º aniversario de creación política,  el 30 de abril de 1936; pueblo luchador, pujante, comprometido con las causas justas sociales.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Huaire Chuquichaico Casio Faustino</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>09/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10041</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10041','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Santa Lucía de la provincia de Lampa, departamento de Puno,. Por conmemorar el 17 de abril su 78º aniversario de creación política como distrito, deseándoles los mejores éxitos en los años venideros en bien del desarrollo local, regional y nacional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Apaza Condori Emiliano</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>09/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10040</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10040','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Paratia de la provincia de Lampa, departamento de Puno, por conmemorar el 23 de abril su 60º aniversario de creación política como distrito, deseándoles los mejores éxitos en los años venideros en bien del desarrollo local, regional y nacional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Apaza Condori Emiliano</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>09/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10039</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10039','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Interpelar a la Ministra de Salud, Midori Musme de Habich Rospigliosi y a la Ministra de Trabajo, Ana Jara Velásquez, a fin de informar a la representación nacional sobre la contratación de médicos cubanos en el Perú, conforme al pliego interpelatorio de 27 preguntas que se adjunta. (Total de Congresistas firmantes 21).</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Aguinaga Recuenco Alejandro,
+Bardalez Cochagne, Aldo Maximiliano,
+Becerril Rodríguez Hector Virgilio,
+Ccama Layme, Francisco,
+Chávez Cossío de Ocampo Martha,
+Chihuán Ramos, Leyla Felicita,
+Cordero Jon Tay María Del Pilar,
+Díaz Dios Juan José,
+Fujimori Higuchi Kenji Gerardo,
+Grandez Saldaña, Víctor Raúl,
+Hurtado Zamudio Jesús Pánfilo,
+López Córdova María Magdalena,
+Melgar Valdéz Elard Galo,
+Ramírez Gamarra Reber Joaquín,
+Reátegui Flores Rolando,
+Rosas Huaranga Julio Pablo,
+Sarmiento Betancourt Freddy Fernando,
+Schaefer Cuculiza Karla Melissa,
+Spadaro Philipps Pedro Carmelo,
+Tapia Bernal Segundo Leocadio,
+Valqui Matos, Néstor Antonio</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>09/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10038</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10038','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Platería de la provincia de Puno, por conmemorar el 22 de abril su 50º aniversario de creación política como distrito, deseándoles los mejores éxitos en los años venideros en bien del desarrollo local, regional y nacional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Apaza Condori Emiliano</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>08/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10037</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10037','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Expresar su más ferviente, cálido saludo a todos los Países Iberoamericanos que congrega en la celebración del Día de las Américas, como día de reconocimiento 14 de abril.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Teves Quispe Julia</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>08/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10036</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10036','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Expresar su más cordial saludo y profundo homenaje a todos los profesionales economista del Perú por conmemorar el 08 de abril el Día del Economista.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Bardalez Cochagne, Aldo Maximiliano</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>08/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10035</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10035','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Expresar un justo reconocimiento y homenaje, así como su más sincera felicitación, a la provincia de Otuzco, departamento de La Libertad, por conmemorar el 25 de abril de 2014 su 153º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Kobashigawa Kobashigawa, Ramón</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>08/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10034</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10034','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Expresar un justo reconocimiento y homenaje, así como su más sincera felicitación, al distrito de Chepén, provincia del mismo nombre, departamento de La Libertad, por conmemorar el 18 de abril de 2014 su 79º aniversario de creación política.
+
+</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Kobashigawa Kobashigawa, Ramón</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>08/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10033</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10033','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saludar y felicitar a los pobladores del distrito metropolitano de San Juan Bautista, por celebrar 54 años de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Acha Romani Walter</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>08/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10032</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10032','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la Municipalidad Distrital de Llauta, en la provincia de Lucanas, departamento de Ayacucho, por celebrar su 85º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Urquizo Maggia José Antonio</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>08/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10031</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10031','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la Municipalidad distrital de Ocaña, en la provincia de Lucanas, departamento de Ayacucho, por celebrar su 85º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Urquizo Maggia José Antonio</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>07/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10030</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10030','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Salud al distrito de Pichacani, en la provincia y departamento de Puno, en la persona de su Alcalde distrital, don Nicolás Ramos Conde, para que por su intermedio haga extensivo al cuerpo de regidores, autoridades, políticas, eclesiásticas, militares, policiales, organizaciones de la sociedad civil y a todos los pobladores, por celebrar el 02 de mayo de 2014, el 160 aniversario de creación política de este distrito, deseándoles los mejores éxitos en los años venideros en bien del desarrollo local, regional y nacional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Coari Mamani Claudia Faustina</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>07/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10029</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10029','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Paucarcolla, en la provincia y departamento de Puno, en la persona de su Alcalde distrital, don Isaac  Samuel Llanqui Condori, para que por su intermedio haga extensivo al cuerpo de regidores, autoridades, políticas, eclesiásticas, militares, policiales, organizaciones de la sociedad civil y a todos los pobladores, por celebrar el 02 de mayo de 2014, el 160 aniversario de creación política de este distrito, deseándoles los mejores éxitos en los años venideros en bien del desarrollo local, regional y nacional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Coari Mamani Claudia Faustina</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>07/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10028</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10028','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Coasa, en la provincia de Carabaya, departamento de Puno, en la persona de su Alcalde distrital, don Ciprian Lucio Mamani Quispe, para que por su intermedio haga extensivo al cuerpo de regidores, autoridades, políticas, eclesiásticas, militares, policiales, organizaciones de la sociedad civil y a todos los pobladores, por celebrar el 02 de mayo de 2014 un aniversario más de creación política de este distrito, deseándoles los mejores éxitos en los años venideros en bien del desarrollo local, regional y nacional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Coari Mamani Claudia Faustina</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>07/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10027</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10027','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Quisca, en la provincia de Sandia, departamento de Puno, en la persona de su Alcalde distrital, don Julián Mamani Vega, para que por su intermedio haga extensivo al cuerpo de regidores, autoridades, políticas, eclesiásticas, militares, policiales, organizaciones de la sociedad civil y a todos los pobladores, por celebrar el 02 de mayo de 2014 un aniversario más de creación política de este distrito, deseándoles los mejores éxitos en los años venideros en bien del desarrollo local, regional y nacional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Coari Mamani Claudia Faustina</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>07/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10026</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10026','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Ananea, en la provincia de San Antonio de Putina, departamento de Puno, en la persona de su Alcalde distrital, don Samuel Ramos Quispe, para que por su intermedio haga extensivo al cuerpo de regidores, autoridades, políticas, eclesiásticas, militares, policiales, organizaciones de la sociedad civil y a todos los pobladores, por celebrar el 02 de mayo de 2014 un aniversario más de creación política de este distrito, deseándoles los mejores éxitos en los años venideros en bien del desarrollo local, regional y nacional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Coari Mamani Claudia Faustina</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>07/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10025</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10025','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de desaguadero, en la provincia de Chucuito-Juli, departamento de Puno, en la persona de su Alcalde distrital, don Juan Carlos Aquino Condori, para que por su intermedio haga extensivo al cuerpo de regidores, autoridades, políticas, eclesiásticas, militares, policiales, organizaciones de la sociedad civil y a todos los pobladores, por celebrar el 02 de mayo de 2014 un aniversario más de creación política de este distrito, deseándoles los mejores éxitos en los años venideros en bien del desarrollo local, regional y nacional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Coari Mamani Claudia Faustina</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>07/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10024</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10024','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Ollachea, en la provincia de Carabaya, departamento de Puno, en la persona de su Alcalde distrital, don Juan Bautista Huayta Apaza, para que por su intermedio haga extensivo al cuerpo de regidores, autoridades, políticas, eclesiásticas, militares, policiales, organizaciones de la sociedad civil y a todos los pobladores, por celebrar el 02 de mayo de 2014 un aniversario más de creación política de este distrito, deseándoles los mejores éxitos en los años venideros en bien del desarrollo local, regional y nacional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Coari Mamani Claudia Faustina</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>07/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10023</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10023','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Zepita, en la provincia de Chucuito-Juli, departamento de Puno, en la persona de su Alcalde distrital, don Ricardo Felipe Jiménez Castilla, para que por su intermedio haga extensivo al cuerpo de regidores, autoridades, políticas, eclesiásticas, militares, policiales, organizaciones de la sociedad civil y a todos los pobladores, por celebrar el 02 de mayo de 2014 un aniversario más de creación política de este distrito, deseándoles los mejores éxitos en los años venideros en bien del desarrollo local, regional y nacional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Coari Mamani Claudia Faustina</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>07/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10022</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10022','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Vilavila, en la provincia de Lampa, departamento de Puno, en la persona de su Alcalde distrital, don Gerónimo Pacco Gomel, para que por su intermedio haga extensivo al cuerpo de regidores, autoridades, políticas, eclesiásticas, militares, policiales, organizaciones de la sociedad civil y a todos los pobladores, por celebrar el 02 de mayo de 2014 un aniversario más de creación política de este distrito, deseándoles los mejores éxitos en los años venideros en bien del desarrollo local, regional y nacional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Coari Mamani Claudia Faustina</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>07/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10021</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10021','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Coata, provincia y departamento de Puno, en la persona de su Alcalde distrital, don Arnaldo Velarde Coaquira, para que por su intermedio haga extensivo al cuerpo de regidores, autoridades, políticas, eclesiásticas, militares, policiales, organizaciones de la sociedad civil y a todos los pobladores, por celebrar el 02 de mayo de 2014 un aniversario más de creación política de este distrito, deseándoles los mejores éxitos en los años venideros en bien del desarrollo local, regional y nacional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Coari Mamani Claudia Faustina</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>07/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10020</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10020','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Capachica, provincia y departamento de Puno, en la persona de su alcalde distrital, don Javier Domingo Ari Paucar, para que por su intermedio haga extensivo al cuerpo de regidores, autoridades, políticas, eclesiásticas, militares, policiales, organizaciones de la sociedad civil y a todos los pobladores, por celebrar el 02 de mayo de 2014,  el LCX aniversario de creación política de este distrito, deseándoles los mejores éxitos en los años venideros en bien del desarrollo local, regional y nacional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Coari Mamani Claudia Faustina</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>07/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10019</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10019','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Tiquillaca, provincia y departamento de Puno, en la persona de su Alcalde distrital, don Yone Walter Villasante Apaza, para que por su intermedio haga extensivo al cuerpo de regidores, autoridades, políticas, eclesiásticas, militares, policiales, organizaciones de la sociedad civil y a todos los pobladores, por celebrar el 02 de mayo de 2014 un aniversario más de creación política de este distrito, deseándoles los mejores éxitos en los años venideros en bien del desarrollo local, regional y nacional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Coari Mamani Claudia Faustina</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>07/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10018</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10018','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Asillo, provincia de Azángaro, departamento de Puno, en la persona de su Alcalde distrital, don Víctor Cutisca Sucari, para que por su intermedio haga extensivo al cuerpo de regidores, autoridades, políticas, eclesiásticas, militares, policiales, organizaciones de la sociedad civil y a todos los pobladores, por celebrar el 02 de mayo de 2014 un aniversario más de creación política de este distrito, deseándoles los mejores éxitos en los años venideros en bien del desarrollo local, regional y nacional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Coari Mamani Claudia Faustina</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>07/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10017</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10017','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Nicasio, provincia de Lampa, departamento de Puno, en la persona de su alcalde distrital, don Percy Iván Arce Pari, para que por su intermedio haga extensivo al cuerpo de regidores, autoridades, políticas, eclesiásticas, militares, policiales, organizaciones de la sociedad civil y a todos los pobladores, por celebrar el 02 de mayo de 2014,  el 160 aniversario de creación política de este distrito, deseándoles los mejores éxitos en los años venideros en bien del desarrollo local, regional y nacional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Coari Mamani Claudia Faustina</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>07/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10016</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10016','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Corani, provincia de Carabaya, departamento de Puno, en la persona de su Alcalde distrital, don Edmundo Alejandrino Cáceres Guerra, para que por su intermedio haga extensivo al cuerpo de regidores, autoridades, políticas, eclesiásticas, militares, policiales, organizaciones de la sociedad civil y a todos los pobladores, por celebrar el 01 de mayo de 2014 un aniversario más de creación política de este distrito, deseándoles los mejores éxitos en los años venideros en bien del desarrollo local, regional y nacional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Coari Mamani Claudia Faustina</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>07/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10015</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10015','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Potoni, en la provincia de Azángaro, departamento de Puno, en la persona de su Alcaldesa distrital, doña Julia Justina Mendoza Huanaco, para que por su intermedio haga extensivo al cuerpo de regidores, autoridades, políticas, eclesiásticas, militares, policiales, organizaciones de la sociedad civil y a todos los pobladores, por celebrar el 02 de mayo de 2014 un aniversario más de creación política de este distrito, deseándoles los mejores éxitos en los años venideros en bien del desarrollo local, regional y nacional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Coari Mamani Claudia Faustina</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>07/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>10014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=10014','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Antonio de Esquilachi, en la provincia y  departamento de Puno, en la persona de su Alcalde distrital, don Jorge Cruz Ticona Patina, para que por su intermedio haga extensivo al cuerpo de regidores, autoridades, políticas, eclesiásticas, militares, policiales, organizaciones de la sociedad civil y a todos los pobladores, por celebrar el 02 de mayo de 2014 un aniversario más de creación política de este distrito, deseándoles los mejores éxitos en los años venideros en bien del desarrollo local, regional y nacional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Coari Mamani Claudia Faustina</td>
+			</tr>
+		
+		<tr height="1"><td colspan="10" bgcolor="ffffff"></td></tr>
+  </table>
+			
+<table  width="580" border="0" cellpadding="0" cellspacing="0" align="center">
+  <tr >
+    <td width="12" align="left" valign="bottom"></td>
+    <td class='menu1' ><strong>10059 registro(s) total(es)</strong></td>
+    <td align="right">
+      <table width="180" border="0">
+        <tr>
+          <td align="right"  >
+            <a href="mocion2011.asp?lg=&CurPage=1"><img src="images/paginar_inicio_.gif" border="0"></a>      
+			</td><td>      
+            <a href='mocion2011.asp?lg=&CurPage=1'> 	
+			<img src="images/paginar_antes_.gif" border="0"></a>
+          </td>
+          <td width="50" align="center" class='menu1' >1 / 202</td>
+          <td align="left">
+            <a href='mocion2011.asp?lg=&CurPage=2'><img src="images/paginar_siguiente_.gif" border="0"></a>
+			</td><td align="left">
+            <a href="mocion2011.asp?lg=&CurPage=202"><img src="images/paginar_final_.gif" border="0"></a>
+          </td> 
+        </tr>
+      </table>
+    </td>
+    <td width="20" align="right" valign="bottom"></td>    
+  </tr>
+</table>
+
+</form>
+<script>print_fuentes(75)</script>
+<script language="javascript">ColumnRight()</script>
+<script language="javascript">EndTable()</script>
+
+</body>
+</html>

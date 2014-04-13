@@ -1,0 +1,1031 @@
+
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<meta http-equiv="pragma" content="no-cache">
+<title>Portal Peruano Sociedad y Parlamento</title>
+<link rel="stylesheet" type="text/css" href="/CSS/cat-conozca.css">
+<link rel="stylesheet" type="text/css" href="/CSS/content.css">
+<link rel="stylesheet" type="text/css" href="/mociones/CSS/mocion.css">
+<script language="javaScript" src="/includes/common.js"></script>
+<script language="javaScript" src="/includes/index.js"></script>
+<script language="javaScript" src="/includes/opt_organiza.inc"></script>
+<script language="javaScript" src="/includes/jslegis.js"></script>
+
+
+
+<script>
+function Legislatura(){
+  var sPagina;
+  var aux=self.document.frmPleno1.Legislatura.options[self.document.frmPleno1.Legislatura.selectedIndex].value;
+  document.frmPleno.C_Legislatura.value = aux;
+  document.location.href = "mocion2011.asp?lg=" + aux;
+return;
+}
+function EnviaPeriodo(){
+  Legislatura();
+  //document.frmPleno1.submit();
+
+return;
+}
+
+function BuscarMocion()
+{
+	var texto;
+	var sPagina;
+	texto = frmPleno1.textobuscar.value;
+	if (texto!="") {
+		//frmPleno1.action='mociondetalle2011.asp?CP=' + 2011 + '&NM=' + texto;
+		var win;
+		win = window.open( 'mociondetalle2011.asp?CP=' + 2011 + '&NM=' + texto,'windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=680,height=480')
+		}
+}
+function Validar_Envio(MiEvento)
+{
+	if(MiEvento.keyCode==13)
+	{
+		BuscarMocion();
+	}
+	
+}
+</script>
+
+
+<!-- ANALISIS GOOGLE -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-174309-25']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<!-- FIN ANALISIS GOOGLE -->
+
+</head>
+<BODY LEFTMARGIN=0 TOPMARGIN=0 MARGINHEIGHT=0 MARGINWIDTH=0 BGCOLOR="#FFFFFF">
+<script language="javascript">PrintHeader();</script>
+<script language="javascript">ColumnLeft(1,numCategorias,1)</script>
+
+
+
+<!--<form name="frmPleno1" id="frmPleno" action="mocion2011.asp?lg=" method="post">-->
+<form name="frmPleno1" id="frmPleno" method="post">
+  <div align="center">
+  <input type="hidden" id="C_Periodo" name="C_Periodo">
+  <input type="hidden" id="C_Legislatura" name="C_Legislatura">
+    
+    <img src="http://www.congreso.gob.pe/n-imagenes/T-MOCIONES-ORDEN-DIA.gif " border="0">  </div>
+<center>
+      <p><a href="mocion2001.asp"> Ver mociones del periodo 2001-2006</a> <br>
+        <a href="mocion2006.asp">Ver mociones del periodo 2006-2011</a><br>        
+      </p>
+    <p>
+	<table border='0' width=580>
+	<tr>
+	    <td width=350>&nbsp;&nbsp;</td>
+        <td>N&uacute;mero:&nbsp;</td>
+        <td><input type="text" name="textobuscar" value="" size="5" onKeyDown="Validar_Envio(event)">
+          &nbsp;</td><td valign="middle"><input name="buscar" 	value="Buscar" type="button" dir="ltr" onClick=BuscarMocion() ;></td>
+	</tr>
+	</table>
+  </center>
+<br>
+
+		<table width="580" border="0" cellpadding="0" cellspacing="0" align="center">
+		<tr height="1"><td colspan="10" bgcolor="navy"></td></tr>
+		<tr align="center" bgcolor="#efefef" height=25>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width="70"  class='menu1' >FECHA</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width="50"  class='menu1' >NÚMERO</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width="70"  class='menu1' >ESTADO</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td  class='menu1'>SUMILLA</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width="150"  class='menu1' >AUTOR(ES)</td>
+		</tr>
+		<tr height="1"><td colspan="8" bgcolor="ffffff"></td></tr>
+
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>03/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09963</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09963','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Guadalupe de la provincia de Pacasmayo, región La Libertad, por conmemorar el 15 de abril de 2014 su 464º aniversario de fundación.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Rodríguez Zavaleta Elías Nicolás</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>03/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09962</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09962','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Renovar el compromiso del Congreso de la República con la defensa del sistema democrático y del Estado de derecho y con el fortalecimiento de las instituciones democráticas del país.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Dammert Ego Aguirre, Manuel Enrique Ernesto,
+Guevara Amasifuen Mesias Antonio,
+Inga Vásquez, Leonardo Agustín,
+Lescano Ancieta Yonhy,
+Mavila Leon Rosa Delsa,
+Mendoza Frisch Verónika Fanny,
+Merino De Lama Manuel Arturo,
+Rimarachin Cabrera Jorge</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>03/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09961</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09961','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Expresar su más sincera felicitación a la provincia de Jauja, departamento de Junín, por conmemorar el 25 de abril de 2014, 480 años de fundación española como la primera capital del Perú.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Hurtado Zamudio Jesús Pánfilo</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>03/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09960</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09960','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda y felicita a la Corporación Radio TV Continental, en la persona de su Gerente General, don Hernán Larico Vera, por celebrar el 07 de abril de 2014 su octavo aniversario de creación institucional al servicio de la comunidad, deseando a todo el equipo de periodistas, comunicadores, locutores, que comprometidos con la sociedad vienen coadyuvando al desarrollo local, regional y nacional, deseándoles los mejores éxitos en los años venideros.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Coari Mamani Claudia Faustina</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>02/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09959</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09959','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Expresa merecido homenaje al músico compositor Zenobio Dagha Sapaico, por celebrar el 04 de abril de 2014 el 94º aniversario  de su natalicio.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Cárdenas Cerrón Johnny</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>02/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09958</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09958','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saludo el 2 de abril  por celebrar el Día Mundial de Concientización sobre el Autismo, a todas las personas y familiares que viven día a día con esta discapacidad.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Monterola Abregu, Wuilian Alfonso</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>02/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09957</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09957','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Exhortar al Poder Ejecutivo para que procesa a realizar una evaluación y revisión del marco normativo que regula la formalización de la pequeña minería y minería artesanal, ejercidas en zonas no prohibidas, con el objeto de mejorarlas y lograr la anhelada formalización. Entre tanto se realice dicha evaluación se exhorta a dejar sin efecto la fecha de vencimiento establecido en el Decreto Legislativo Nº 1105.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>De La Torre Dueñas Hernán,
+Guevara Amasifuen Mesias Antonio,
+Portugal Catacora Mariano Eutropio,
+Simon Munaro, Yehude</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>02/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09956</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09956','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda y felicita a todos los abogados y a los Colegios de Abogados del Perú, por conmemorar el 02 de abril de 2014 el "Día del Abogado", deseándoles éxitos en su vida profesional y personal.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Urquizo Maggia José Antonio</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>02/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09955</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09955','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saludar al Servicio de Administración Tributaria de Trujillo (SATT) por conmemorar el 5 de abril de 2014 su 15º aniversario de vida institucional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Acuña Núñez, Richard Frank</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>02/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09954</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09954','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al Centro de Documentación, Defensa y apoyo del Folklore por conmemorar su XL aniversario de fundación de la honorable institución cultural.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Portugal Catacora Mariano Eutropio</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>02/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09953</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09953','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Expresar sus saludos y congratulaciones a la Institución Educativa Privada "Claretiano" de Lima, por conmemorar el 9 de abril de 2014 su 80º aniversario de vida institucional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Belaunde Moreyra, Martin</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>02/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09952</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09952','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a los abogados colegiados del "Ilustre Colegio de Abogados del Callao", de la Provincia Constitucional del Callao, por la celebración del Día del Abogado.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Spadaro Philipps Pedro Carmelo</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>01/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09951</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09951','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Expresar su saludo y reconocimiento a todos los abogados, destacados profesionales letrados, defensores del derecho político y social, por conmemorar el 02 de abril el "Día del Abogado".</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Salgado Rubianes, Luz Filomena</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>01/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09950</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09950','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al señor Felipe Castillo Alfaro, Alcalde del distrito de Los Olivos, y por su intermedio a los regidores, trabajadores, autoridades políticas, policiales, religiosas y la población en general del distrito,, por conmemorar el 04 de abril el 25º aniversario de su creación política, Bodas del Plata.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Salgado Rubianes, Luz Filomena</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>01/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09949</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09949','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda y felicita al personal administrativo, periodistas y de servicios de "Radio y televisión Continental", por conmemorar  el 07 de abril su 9º aniversario de creación.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Apaza Condori Emiliano</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>01/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09948</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09948','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Amantaní, provincia de Puno, por conmemorar el 09 de abril su 49º aniversario de creación política como distrito, deseándoles los mejores éxitos en los años venideros en bien del desarrollo local, regional y nacional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Apaza Condori Emiliano</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>01/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09947</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09947','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saludar y felicitar a todos los abogados del Perú por celebrar su día el 2 de abril.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Zerillo Bazalar Manuel Salvador</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>01/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09946</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09946','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Expresar su más cálido saludo y reconocimiento a las personas con autismo en nuestro país, por celebrar el 02 de abril el "Día Mundial de Concienciación sobre el Autismo".</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Reynaga Soto Jhon Arquímides</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>01/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09945</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09945','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al Dr. Daniel Figallo Rivadeneyra, Ministro de Justicia y Derechos Humanos, y por su intermedio a todos los abogados del Perú, por celebrar el 02 de abril el Día del Abogado, reconociendo la importante labor que desempeñan.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Monterola Abregu, Wuilian Alfonso</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>01/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09944</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09944','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la ciudad de Juli, capital de la provincia de Chucuito, departamento y región Puno, en la persona de su Alcalde provincial, Ing. Juan Ludgerio Aguilar Olivera, para que por su intermedio haga extensivo al cuerpo de regidores, autoridades políticas, eclesiásticas, militares, policiales, organizaciones de la sociedad civil y a todos los pobladores, por celebrar el 02 de abril de 2014 un aniversario más de la creación política de este distrito, deseándoles los mejores éxitos en los años venideros en bien del desarrollo local, regional y nacional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Coari Mamani Claudia Faustina</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>01/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09943</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09943','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la Confederación Campesina del Perú-CCP, en la persona de su Presidente del Consejo Directivo, doña Yenny Ugarte Zubileta, para que por su intermedio haga extensivo a los miembros directivos, federaciones, equipo técnico y a todos sus integrantes, por celebrar el 11 de abril de 2014 su 67º aniversario de fundación institucional, deseándoles los mejores éxitos en los años venideros en bien del desarrollo local, regional y nacional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Coari Mamani Claudia Faustina</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>01/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09942</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09942','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Platería, provincia, departamento y región Puno, en la persona de su Alcalde distrital, don Mariano Edgar Mamani Cariapaza, para que por su intermedio haga extensivo al cuerpo de regidores, autoridades políticas, eclesiásticas, militares, policiales, organizaciones de la sociedad civil y a todos los pobladores, por celebrar el 25 de abril de 2014 un aniversario más de la creación política de este distrito, deseándoles los mejores éxitos en los años venideros en bien del desarrollo local, regional y nacional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Coari Mamani Claudia Faustina</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>01/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09941</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09941','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Amanti, provincia, departamento y región Puno, en la persona de su Alcalde distrital, don Marcelino Yucra Pacompía, para que por su intermedio haga extensivo al cuerpo de regidores, autoridades políticas, eclesiásticas, militares, policiales, organizaciones de la sociedad civil y a todos los pobladores, por celebrar el 09 de abril de 2014 un aniversario más de la creación política de este distrito, deseándoles los mejores éxitos en los años venideros en bien del desarrollo local, regional y nacional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Coari Mamani Claudia Faustina</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>01/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09940</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09940','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Husicancha, provincia de Huancayo, departamento de Junín, por conmemorar el 7 de abril 84 años de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Hurtado Zamudio Jesús Pánfilo</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>01/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09939</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09939','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Chacapampa, provincia de Huancayo, departamento de Junín, por conmemorar el 15 de abril 55 años de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Hurtado Zamudio Jesús Pánfilo</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>01/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09938</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09938','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Cullhuas, provincia de Huancayo, departamento de Junín, por conmemorar el 23 de abril 60 años de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Hurtado Zamudio Jesús Pánfilo</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>01/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09937</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09937','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Janjaillo, provincia de Jauja, departamento de Junín, por conmemorar el 15 de abril 55 años de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Hurtado Zamudio Jesús Pánfilo</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>01/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09936</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09936','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Santa Bárbara de Carhuacayán, provincia de Yauli, departamento de Junín, por conmemorar el 7 de abril 60 años de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Hurtado Zamudio Jesús Pánfilo</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>01/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09935</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09935','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Cochas, provincia de Concepción, departamento de Junín, por conmemorar el 7 de abril 60 años de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Hurtado Zamudio Jesús Pánfilo</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>01/04/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09934</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09934','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la Cámara de Comercio de Lima del departamento de Lima, por cumplir el 20 de abril de 2014 su 126º aniversario de fundación y hace votos para que esta digna institución continúe por la senda del desarrollo.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Yovera Flores Alejandro</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>31/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09933</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09933','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Las Lomas, provincia de Piura, por celebrar el 03 de abril de 2014 su 78º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Castagnino Lema Juan César</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>31/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09932</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09932','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saludar y felicitar al distrito de Chucuito, de la provincia y departamento de Puno, por celebrar el 2 de abril de 2014, su 450º aniversario de fundación.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Lescano Ancieta Yonhy</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>28/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09931</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09931','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saludo institucional al Banco de Crédito del Perú, por conmemorarse los 125 años de su fundación y su funcionamiento ininterrumpido, comprometido con promover el éxito de sus clientes con soluciones financieras adecuadas a sus necesidades, facilitar el desarrollo de sus colaboradores y apoyar al desarrollo sostenible de nuestro país, considerándolo como un banco antiguo con espíritu moderno.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Elías Ávalos, José Luis</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>28/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09930</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09930','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saludo institucional a la Cámara de Comercio de Lima, por conmemorar los 126 años de su fundación y su funcionamiento ininterrumpido, comprometido con promover el desarrollo de la libre empresa haciendo respetar sus derechos y comprometida en brindar servicio empresariales de calidad y en la búsqueda continua de la satisfacción de sus asociados.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Elías Ávalos, José Luis</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>28/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09929</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09929','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la provincia del Santa, del departamento de Ancash, por conmemorar el 14 de abril de 2014 el sexagésimo cuarto aniversario de su creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Crisólogo Espejo, Víctor Walberto</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>27/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09928</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09928','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Expresar el respaldo a la conducta democrática de la señora Diputada María Corina Machado, así como la presencia de los señores Congresistas Cecilia Chacón, Martín Belaunde y Luis Galarreta en el hermano país de Venezuela.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Acuña Núñez, Richard Frank,
+Acuña Peralta, Virgilio,
+Aguinaga Recuenco Alejandro,
+Alcorta Suero María Lourdes Pía Luisa,
+Andrade Carmona Fernando,
+Becerril Rodríguez Hector Virgilio,
+Beingolea Delgado, Alberto Ismael,
+Benítez Rivas Heriberto,
+Bruce Montes de Oca Carlos Ricardo,
+Cabrera Ganoza Eduardo Felipe,
+Capuñay Quispe Esther Yovana,
+Castagnino Lema Juan César,
+Ccama Layme, Francisco,
+Chávez Cossío de Ocampo Martha,
+Chihuán Ramos, Leyla Felicita,
+Cuculiza Torre Luisa María,
+Díaz Dios Juan José,
+Eguren Neuenschwander Juan Carlos,
+Elías Ávalos, José Luis,
+Espinoza Rosales Rennan Samuel,
+Fujimori Higuchi Kenji Gerardo,
+Gagó Pérez Julio César,
+Grandez Saldaña, Víctor Raúl,
+Hurtado Zamudio Jesús Pánfilo,
+Iberico Núñez Luis Carlos Antonio,
+Julca Jara, Dalmacio Modesto,
+Kobashigawa Kobashigawa, Ramón,
+León Rivera José Raguberto,
+León Romero Luciana Milagros,
+Lescano Ancieta Yonhy,
+Lewis Del Alcazar Norman David,
+López Córdova María Magdalena,
+Medina Ortiz, Antonio,
+Monterola Abregu, Wuilian Alfonso,
+Mora Zevallos, Daniel Emiliano,
+Neyra Huamaní Rofilio T,
+Neyra Olaychea Ángel,
+Pérez del Solar Cuculiza Gabriela Lourdes,
+Portugal Catacora Mariano Eutropio,
+Reátegui Flores Rolando,
+Rondón Fudinaga, Gustavo Bernardo,
+Rosas Huaranga Julio Pablo,
+Salazar Miranda, Octavio Edilberto,
+Salgado Rubianes, Luz Filomena,
+Sarmiento Betancourt Freddy Fernando,
+Schaefer Cuculiza Karla Melissa,
+Spadaro Philipps Pedro Carmelo,
+Tait Villacorta Cecilia,
+Tan de Inafuko Aurelia,
+Tubino Arias Schreiber Carlos Mario Del Carmen,
+Uribe Medina Cenaida Cebastiana,
+Vacchelli Corbetto Gian Carlo,
+Valqui Matos, Néstor Antonio,
+Wong Pujada, Enrique</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>27/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09927</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09927','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saludar y felicitar al ilustre Colegio de Abobados de Arequipa, por celebrar el 02 de abril de 2014, un aniversario más del Día del Abogado.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Solórzano Flores Ana María</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>27/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09926</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09926','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a todos los abogados del Perú, en especial a todos los profesionales de la Provincia Constitucional del Callao, por conmemorar el 02 de abril de 2014 "Día del Abogado".</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Canches Guzmán Rogelio Antenor</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>27/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09925</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09925','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saludar y felicitar al ilustre Colegio de Abogados  de Lima, por celebrar el 02 de abril de 2014 un aniversario más del Día del Abogado.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Solórzano Flores Ana María</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>27/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09924</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09924','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Conformar una Comisión Investigadora por el plazo de 180 días, encargada de investigar las presuntas irregularidades y actos de corrupción en la gestión del Gobierno Regional de Ancash y la Municipalidad Provincial del Santa; así como sus posibles vinculaciones con los asesinatos cometidos en esta región y el crimen organizado que tendría nexos en la entidades públicas.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Espinoza Rosales Rennan Samuel,
+Huaire Chuquichaico Casio Faustino,
+Julca Jara, Dalmacio Modesto,
+Mora Zevallos, Daniel Emiliano</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>27/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09923</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09923','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saludar y rendir homenaje a las trabajadoras y trabajadores del hogar que el 30 de marzo celebran su día, de conformidad a la Ley Nº 27986.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Tubino Arias Schreiber Carlos Mario Del Carmen</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>27/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09922</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09922','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Exhortar al Poder Ejecutivo se sirva asignar recursos económicos suficientes y personal capacitado e implementar espacios de formalización efectiva (ventanilla única) con la finalidad de seguir viabilizando la formalización de actividad minera informal de la pequeña minería y de la minería artesanal, ejercida en zonas no prohibidas para la realización de dichas actividades a nivel nacional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Acha Romani Walter,
+Anicama Ñañez Elsa Celia,
+Bardalez Cochagne, Aldo Maximiliano,
+Beingolea Delgado, Alberto Ismael,
+Benítez Rivas Heriberto,
+Cabrera Ganoza Eduardo Felipe,
+Ccama Layme, Francisco,
+Chávez Cossío de Ocampo Martha,
+Chihuán Ramos, Leyla Felicita,
+Cuculiza Torre Luisa María,
+Falconí Picardo Marco Tulio,
+Grandez Saldaña, Víctor Raúl,
+Hurtado Zamudio Jesús Pánfilo,
+Inga Vásquez, Leonardo Agustín,
+Kobashigawa Kobashigawa, Ramón,
+Lescano Ancieta Yonhy,
+López Córdova María Magdalena,
+Melgar Valdéz Elard Galo,
+Neyra Olaychea Ángel,
+Rimarachin Cabrera Jorge,
+Romero Rodriguez, Eulogio Amado,
+Rosas Huaranga Julio Pablo,
+Sarmiento Betancourt Freddy Fernando,
+Schaefer Cuculiza Karla Melissa,
+Valqui Matos, Néstor Antonio,
+Yovera Flores Alejandro</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>27/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09921</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Aprobada</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09921','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Expresar su cordial saludo y felicitación a la Confederación Nacional de Personal con Discapacidad del Perú - CONFENADIP, por celebrar el 28 de marzo de 2014 el 33 aniversario de su fundación.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Vacchelli Corbetto Gian Carlo</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>27/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09920</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09920','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Otorgar facultades de Comisión Investigadora a la Comisión de Fiscalización y Contraloría para investigar los graves problemas en materia de orden interno y seguridad ciudadana, vinculados con hechos de corrupción acaecidos en la región Ancash, por un plazo de noventa días.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Aguinaga Recuenco Alejandro,
+Becerril Rodríguez Hector Virgilio,
+Gagó Pérez Julio César,
+Lescano Ancieta Yonhy,
+Zeballos Salinas, Vicente Antonio,
+Zerillo Bazalar Manuel Salvador</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>27/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09919</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Aprobado integrantes de Grupo</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09919','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Constituir una Comisión investigadora multipartidaria, por un plazo de 180 días, con las facultades establecidas en el artículo 88 del Reglamento del Congreso, encargada de investigar las presuntas irregularidades y actos de corrupción del Gobierno Regional de Ancash y su relación con la existencia de mafias y crimen organizado infiltrados en los órganos de gobierno e instancias del Estado.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Dammert Ego Aguirre, Manuel Enrique Ernesto,
+Lescano Ancieta Yonhy,
+Mavila Leon Rosa Delsa,
+Merino De Lama Manuel Arturo,
+Rimarachin Cabrera Jorge</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>27/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09918</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Aprobada</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09918','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Expresar su reconocimiento y homenaje póstumo al señor JOSÉ PORFIRIO VÁSQUEZ MONTERO, más conocido como PEPE VÁSQUEZ, por su destacada trayectoria artística en la difusión de la música afro peruana.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Acuña Peralta, Virgilio,
+Aguinaga Recuenco Alejandro,
+Becerril Rodríguez Hector Virgilio,
+Cabrera Ganoza Eduardo Felipe,
+Capuñay Quispe Esther Yovana,
+Carrillo Cavero Hugo,
+Chávez Cossío de Ocampo Martha,
+Chehade Moya, Omar Karim,
+Chihuán Ramos, Leyla Felicita,
+Condori Jahuira Gladys Natalie,
+Cuculiza Torre Luisa María,
+Fujimori Higuchi Kenji Gerardo,
+Gastañadui Ramírez Santiago,
+Iberico Núñez Luis Carlos Antonio,
+Kobashigawa Kobashigawa, Ramón,
+López Córdova María Magdalena,
+Melgar Valdéz Elard Galo,
+Neyra Olaychea Ángel,
+Rivas Teixeira Martín Amado,
+Rondón Fudinaga, Gustavo Bernardo,
+Salazar Miranda, Octavio Edilberto,
+Salgado Rubianes, Luz Filomena,
+Sarmiento Betancourt Freddy Fernando,
+Schaefer Cuculiza Karla Melissa,
+Spadaro Philipps Pedro Carmelo,
+Tan de Inafuko Aurelia,
+Tejada Galindo Sergio Fernando,
+Teves Quispe Julia,
+Uribe Medina Cenaida Cebastiana,
+Vacchelli Corbetto Gian Carlo,
+Valqui Matos, Néstor Antonio</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>27/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09917</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Aprobada</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09917','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de San Juan Bautista, provincia de Huamanga, región de Ayacucho,  por su creación política acontecida el 07 de abril de 1960, consecuentemente por conmemorar 54 aniversario.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Neyra Huamaní Rofilio T</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>27/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09916</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Aprobada</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09916','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saludar a la provincia de Huamanga, región de Ayacucho, por su creación acontecida el 25 de abril de 1540, conmemorar su 474 aniversario de creación política, haciendo votos por su desarrollo.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Neyra Huamaní Rofilio T</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>27/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09915</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Aprobada</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09915','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saludar al Colegio de Abogados de Arequipa y a todos sus integrantes, en la persona de su Decano Alfredo alvarez Díaz, por celebrar el 02 de abril el Día del Abogado.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Zamudio Briceño Tomás Martín</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>26/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09914</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Aprobada</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09914','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la Institución Educativa "Manuel Seoane Correa", ubicado en el distrito de Cabana, provincia de Lucanas, región Ayacucho, por celebrar el 28 de octubre de 2014, sus "Bodas de Oro" institucional, al cumplir su 50º aniversario de creación.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Otárola Peñaranda Fredy Rolando</td>
+			</tr>
+		
+		<tr height="1"><td colspan="10" bgcolor="ffffff"></td></tr>
+  </table>
+			
+<table  width="580" border="0" cellpadding="0" cellspacing="0" align="center">
+  <tr >
+    <td width="12" align="left" valign="bottom"></td>
+    <td class='menu1' ><strong>10059 registro(s) total(es)</strong></td>
+    <td align="right">
+      <table width="180" border="0">
+        <tr>
+          <td align="right"  >
+            <a href="mocion2011.asp?lg=&CurPage=1"><img src="images/paginar_inicio_.gif" border="0"></a>      
+			</td><td>      
+            <a href='mocion2011.asp?lg=&CurPage=2'> 	
+			<img src="images/paginar_antes_.gif" border="0"></a>
+          </td>
+          <td width="50" align="center" class='menu1' >3 / 202</td>
+          <td align="left">
+            <a href='mocion2011.asp?lg=&CurPage=4'><img src="images/paginar_siguiente_.gif" border="0"></a>
+			</td><td align="left">
+            <a href="mocion2011.asp?lg=&CurPage=202"><img src="images/paginar_final_.gif" border="0"></a>
+          </td> 
+        </tr>
+      </table>
+    </td>
+    <td width="20" align="right" valign="bottom"></td>    
+  </tr>
+</table>
+
+</form>
+<script>print_fuentes(75)</script>
+<script language="javascript">ColumnRight()</script>
+<script language="javascript">EndTable()</script>
+
+</body>
+</html>

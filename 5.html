@@ -1,0 +1,903 @@
+
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<meta http-equiv="pragma" content="no-cache">
+<title>Portal Peruano Sociedad y Parlamento</title>
+<link rel="stylesheet" type="text/css" href="/CSS/cat-conozca.css">
+<link rel="stylesheet" type="text/css" href="/CSS/content.css">
+<link rel="stylesheet" type="text/css" href="/mociones/CSS/mocion.css">
+<script language="javaScript" src="/includes/common.js"></script>
+<script language="javaScript" src="/includes/index.js"></script>
+<script language="javaScript" src="/includes/opt_organiza.inc"></script>
+<script language="javaScript" src="/includes/jslegis.js"></script>
+
+
+
+<script>
+function Legislatura(){
+  var sPagina;
+  var aux=self.document.frmPleno1.Legislatura.options[self.document.frmPleno1.Legislatura.selectedIndex].value;
+  document.frmPleno.C_Legislatura.value = aux;
+  document.location.href = "mocion2011.asp?lg=" + aux;
+return;
+}
+function EnviaPeriodo(){
+  Legislatura();
+  //document.frmPleno1.submit();
+
+return;
+}
+
+function BuscarMocion()
+{
+	var texto;
+	var sPagina;
+	texto = frmPleno1.textobuscar.value;
+	if (texto!="") {
+		//frmPleno1.action='mociondetalle2011.asp?CP=' + 2011 + '&NM=' + texto;
+		var win;
+		win = window.open( 'mociondetalle2011.asp?CP=' + 2011 + '&NM=' + texto,'windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=680,height=480')
+		}
+}
+function Validar_Envio(MiEvento)
+{
+	if(MiEvento.keyCode==13)
+	{
+		BuscarMocion();
+	}
+	
+}
+</script>
+
+
+<!-- ANALISIS GOOGLE -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-174309-25']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<!-- FIN ANALISIS GOOGLE -->
+
+</head>
+<BODY LEFTMARGIN=0 TOPMARGIN=0 MARGINHEIGHT=0 MARGINWIDTH=0 BGCOLOR="#FFFFFF">
+<script language="javascript">PrintHeader();</script>
+<script language="javascript">ColumnLeft(1,numCategorias,1)</script>
+
+
+
+<!--<form name="frmPleno1" id="frmPleno" action="mocion2011.asp?lg=" method="post">-->
+<form name="frmPleno1" id="frmPleno" method="post">
+  <div align="center">
+  <input type="hidden" id="C_Periodo" name="C_Periodo">
+  <input type="hidden" id="C_Legislatura" name="C_Legislatura">
+    
+    <img src="http://www.congreso.gob.pe/n-imagenes/T-MOCIONES-ORDEN-DIA.gif " border="0">  </div>
+<center>
+      <p><a href="mocion2001.asp"> Ver mociones del periodo 2001-2006</a> <br>
+        <a href="mocion2006.asp">Ver mociones del periodo 2006-2011</a><br>        
+      </p>
+    <p>
+	<table border='0' width=580>
+	<tr>
+	    <td width=350>&nbsp;&nbsp;</td>
+        <td>N&uacute;mero:&nbsp;</td>
+        <td><input type="text" name="textobuscar" value="" size="5" onKeyDown="Validar_Envio(event)">
+          &nbsp;</td><td valign="middle"><input name="buscar" 	value="Buscar" type="button" dir="ltr" onClick=BuscarMocion() ;></td>
+	</tr>
+	</table>
+  </center>
+<br>
+
+		<table width="580" border="0" cellpadding="0" cellspacing="0" align="center">
+		<tr height="1"><td colspan="10" bgcolor="navy"></td></tr>
+		<tr align="center" bgcolor="#efefef" height=25>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width="70"  class='menu1' >FECHA</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width="50"  class='menu1' >NÚMERO</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width="70"  class='menu1' >ESTADO</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td  class='menu1'>SUMILLA</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width="150"  class='menu1' >AUTOR(ES)</td>
+		</tr>
+		<tr height="1"><td colspan="8" bgcolor="ffffff"></td></tr>
+
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>14/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09863</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09863','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de La Joya, provincia y región de Arequipa, por celebrar el 25 de marzo su 62º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Apaza Ordóñez Justiniano Romulo</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>14/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09862</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09862','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la Liga de Artesanos del Perú - Trujillo, por conmemorar el 19 de marzo de 2014 el "Día del Artesano Peruano".</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Rodríguez Zavaleta Elías Nicolás</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>14/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09861</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09861','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Expresar su más cálido saludo y felicitación al Director Ejecutivo del "Parque de las Leyendas-Felipe Benavides Barreda", señor Gustavo Murillo Gianella, y por su intermedio a todo el personal profesional académico y administrativo, por sus Bodas de Oro, a celebrarse el 20 de marzo de 2014.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Otárola Peñaranda Fredy Rolando</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>14/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09860</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09860','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saludar a todos esos valerosos comandos que participaron en la "Operación Militar Chavín de Huantar", por conmemorar el 22 de abril su 17º aniversario.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Alcorta Suero María Lourdes Pía Luisa</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>14/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09859</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09859','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de San Isidro, por conmemorar el 24 de abril su 83º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Alcorta Suero María Lourdes Pía Luisa</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>14/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09858</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09858','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la Provincia Constitucional del Callao, por conmemorar el 22 de abril su 157º aniversario como Provincia Constitucional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Alcorta Suero María Lourdes Pía Luisa</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>14/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09857</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09857','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Punta Negra, por conmemorar el 07 de abril su 60º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Alcorta Suero María Lourdes Pía Luisa</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>14/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09856</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09856','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Los Olivos, por conmemorar el 07 de abril su 25º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Alcorta Suero María Lourdes Pía Luisa</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>14/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09855</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09855','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al Centro Poblado de "Villa Juan Velasco Alvarado" (Majes-Caylloma), provincia de Caylloma, departamento de Arequipa, en la persona de su Alcaldesa, señora Gladis Chávez Álvarez, por celebrar el 18 de marzo su 18º aniversario de creación.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Zamudio Briceño Tomás Martín</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>14/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09854</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09854','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de La Joya, provincia y departamento de Arequipa, en la persona de su Alcalde, señor Juan Basilio Herrera Obando, por celebrar el 25 de marzo su 62º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Zamudio Briceño Tomás Martín</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>14/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09853</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09853','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la provincia de Castilla, departamento de Arequipa, en la persona de su Alcalde, señor Héctor Raúl Cáceres Muñoz, por celebrar el 21 de marzo su 160º aniversario de creación.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Zamudio Briceño Tomás Martín</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>13/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09852</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09852','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Exhortar al poder Ejecutivo para que programe una sesión de Consejo de Ministros Descentralizado en la ciudad de Tumbes, con el propósito de abordar la problemática que afronta este departamento y establecer política y acciones orientadas a su desarrollo.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Merino De Lama Manuel Arturo</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>13/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09851</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09851','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al ilustre poeta peruano don César Vallejo por conmemorar el 16 de marzo el 122º aniversario de su nacimiento acaecido en Santiago de Chuco, La Libertad, en 1892.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Acuña Núñez, Richard Frank</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>13/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09850</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09850','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a todos los Defensores de la Patria de los años 1978, 1981 y 1995 (Héroes del Cenepa), por los gloriosos hechos de armas cumplidos, demostrando su valentía, patriotismo y coraje al defender el territorio del país.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Lescano Ancieta Yonhy</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>12/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09849</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Aprobada</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09849','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a todos los consumidores y ciudadanos del Perú por el Día Mundial del Consumidor a celebrarse el 15 de marzo, y a las Asociaciones de Consumidores a nivel nacional o quienes renovamos nuestro compromiso de vigilar por el respeto a los derechos del consumidor peruano y continuar perfeccionando la legislación en búsqueda de un trato justo y equitativo en sus relaciones de consumo con los proveedores.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Teves Quispe Julia</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>12/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09848</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09848','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda y felicita a todos los artesanos del Perú, en especial a los madrediosenses, por celebrar el 19 de marzo el día del artesano peruano, reconociendo en ellos el valor cultural de su trabajo que trasciende a todas las generaciones y hace votos para que este sector crezca con el apoyo del gobierno.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Romero Rodriguez, Eulogio Amado</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>12/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09847</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09847','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la provincia de Ica por el cuadragésimo noveno Festival Internacional de la Vendimia de Ica - FIVI 2014, siendo el día central el 14 de marzo.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Anicama Ñañez Elsa Celia</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>12/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09846</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09846','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda y felicita por celebrar su 12º aniversario de creación al Sindicato de Trabajadores del Puerto de Ilo, Moquegua.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Anicama Ñañez Elsa Celia</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>12/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09845</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09845','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Paracas por su 63º aniversario de creación política y XXV Festival Paracas 2014.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Anicama Ñañez Elsa Celia</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>12/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09844</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09844','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Lobitos, provincia de Talara, en el departamento de Piura, por celebrar el 17 de marzo de 2014 su 59º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Castagnino Lema Juan César</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>12/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09843</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09843','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la provincia de Paita, departamento de Piura, por celebrar el 30 de marzo de 2014 su 153º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Castagnino Lema Juan César</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>12/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09842</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09842','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la provincia de Piura, por celebrar el 30 de marzo de 2014 su 153º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Castagnino Lema Juan César</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>12/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09841</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09841','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Castilla, en la provincia y departamento de Piura, por celebrar el 30 de marzo de 2014 aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Castagnino Lema Juan César</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>12/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09840</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09840','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de El Alto, provincia de Talara, departamento de Piura, por celebrar el 17 de marzo de 2014 su 59º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Castagnino Lema Juan César</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>12/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09839</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09839','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Montero, provincia de Ayabaca, departamento de Piura, por celebrar el 24 de marzo de 2014 su 79º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Castagnino Lema Juan César</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>12/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09838</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09838','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Marcavelica, provincia de Sullana, departamento de Piura, por celebrar el 25 de marzo de 2014 su 62º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Castagnino Lema Juan César</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>12/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09837</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09837','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Sondorillo, provincia de Huancabamba, departamento de Piura, por celebrar el 27 de marzo de 2014 su 79º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Castagnino Lema Juan César</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>12/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09836</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09836','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda y felicita a los funcionarios, servidores y personal que conforma el Servicio de Administración Tributaria, de la ciudad de Trujillo (SATT), por conmemorar el 05 de abril de 2014 el décimo quinto aniversario del inicio de sus funciones.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Kobashigawa Kobashigawa, Ramón</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>12/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09835</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09835','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a toda la población del distrito de Independencia, provincia y departamento de Lima, por conmemorar el 16 de marzo su 50º aniversario de creación política como distrito.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Capuñay Quispe Esther Yovana</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>11/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09834</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09834','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la población del distrito de Huacllán de la provincia de Aija, región Ancash, por conmemorar el 05 de marzo su 78º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Julca Jara, Dalmacio Modesto</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>11/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09833</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09833','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la población del distrito de Comandante Noel de la provincia de Casma, región Ancash, por conmemorar el 05 de marzo su 88º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Julca Jara, Dalmacio Modesto</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>11/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09832</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09832','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la población del distrito de Alfonso Ugarte de la provincia de Sihuas, en la región Ancash, por conmemorar el 27 de marzo su 61º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Julca Jara, Dalmacio Modesto</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>11/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09831</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09831','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la provincia de Aija del departamento de Ancash, por conmemorar el 05 de marzo su 78º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Julca Jara, Dalmacio Modesto</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>11/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09830</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09830','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la población del distrito de San Juan de provincia de Sihuas, región Ancash, por conmemorar el 14 de marzo su 50º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Julca Jara, Dalmacio Modesto</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>11/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09829</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09829','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la población del distrito de La Merced de la provincia de Aija, región Ancash, por conmemorar el 05 de marzo su 78º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Julca Jara, Dalmacio Modesto</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>11/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09828</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09828','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la población del distrito de Cochapeti de la provincia de Huarmey, región Ancash, por conmemorar el 05 de marzo su 78º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Julca Jara, Dalmacio Modesto</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>10/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09827</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09827','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al Puerto de Salaverry, provincia de Trujillo, región La Libertad, por conmemorar el 09 de marzo de 2014 su 144º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Rodríguez Zavaleta Elías Nicolás</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>10/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09826</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09826','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Paccha, provincia de Yauli, departamento de Junín, por conmemorar el 17 de marzo 56 años de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Hurtado Zamudio Jesús Pánfilo</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>07/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09825</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Tramitada con conocimiento del CD</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09825','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la Mancomunidad de las Cabezadas del Sur de Lucanas, Ayacucho, "MANSURLA", por celebrar el 11º aniversario de fundación.
+
+</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Urquizo Maggia José Antonio</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>07/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09824</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09824','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la Cámara de Comercio de Jesús María, en la provincia de Lima, que el 21 de marzo de 2014 celebra su noveno aniversario de vida institucional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Pariona Galindo Federico</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>07/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09823</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09823','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Expresar el merecido homenaje al partido político ACCIÓN POPULAR por celebrar el 11 de marzo de 2014 el 58º aniversario del Mensaje a la Juventud, pronunciado por al arquitecto Fernando Belaunde Terry, en respuesta a la postulación presidencial que le propusiera el Frente Nacional de Juventudes Democráticas el año 1956.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Guevara Amasifuen Mesias Antonio</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>06/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09820</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09820','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda y reconoce a todas las mujeres del Perú y en especial a las mujeres de los Clubes de Madres, Comedores Populares y dirigentes de los Pueblos Jóvenes y Asentamientos Humanos.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Simon Munaro, Yehude</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>06/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09819</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09819','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la incomparable y siempre acogedora provincia de Santa Cruz, del departamento de Cajamarca, por conmemorar el 21 de abril su 64º aniversario de creación política, tierra que ha visto nacer a insignes representantes que aportaron al desarrollo del país cuyas cualidades inocultables son la cordialidad y ser poseedora de grandes riquezas naturales.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Ramírez Gamarra Reber Joaquín</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>06/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09818</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09818','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al Centro Poblado de Porcón Bajo y Porcon Alto por conmemorar el 13 de abril su el central de su festividad religiosa, Fiesta de las Cruces de Porcón, que se encuentra en el Centro Poblado de Porcón, provincia de Cajamarca, que se celebra el domingo de Ramos; se llevan a cabo cuatro ceremonias: la coronación de las Cruces, el saludo al "Señor" en la casa del mayordomo (encargado de liderar los festejos cada año), responsos cantados en quechua y latín, y finalmente, la procesión a la capilla de la hacienda Porcón. Que escuche los rezos llenos de fe de sus hijos para los que suplicamos derrame sus bendiciones y parabienes a quienes los veneran infinitamente.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Ramírez Gamarra Reber Joaquín</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>06/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09817</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09817','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda y felicita a todas las mujeres peruanas y a las organizaciones de mujeres en el Perú, representadas por sus lideresas, por celebrar el 08 de marzo el Día Inter nacional de la Mujer.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Solórzano Flores Ana María</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>05/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09816</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09816','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Expresar su más ferviente saludo y felicitación a las mujeres del mundo y del Perú.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Tan de Inafuko Aurelia</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>05/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09815</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09815','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la provincia de Talara, departamento de Piura, por celebrar el 16 de marzo de 2014 su 58º aniversario de creación.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Castagnino Lema Juan César</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>05/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09814</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09814','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saludar por el Día Internacional de la Mujer, que se celebra el 08 de marzo y rendir homenaje a las mujeres, por el esfuerzo realizado durante mucho tiempo en la búsqueda de la igualdad de derechos y oportunidades para hacer realidad su pleno desarrollo personal.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Condori Cusi Rubén</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>05/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09813</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09813','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de El Alto, en el departamento de Piura, por conmemorar el 17 de marzo 58 años de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Sarmiento Betancourt Freddy Fernando</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>05/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09812</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09812','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la provincia de Talara, en el departamento de Piura, por conmemorar el 16 de marzo 58 años de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Sarmiento Betancourt Freddy Fernando</td>
+			</tr>
+		
+		<tr height="1"><td colspan="10" bgcolor="ffffff"></td></tr>
+  </table>
+			
+<table  width="580" border="0" cellpadding="0" cellspacing="0" align="center">
+  <tr >
+    <td width="12" align="left" valign="bottom"></td>
+    <td class='menu1' ><strong>10059 registro(s) total(es)</strong></td>
+    <td align="right">
+      <table width="180" border="0">
+        <tr>
+          <td align="right"  >
+            <a href="mocion2011.asp?lg=&CurPage=1"><img src="images/paginar_inicio_.gif" border="0"></a>      
+			</td><td>      
+            <a href='mocion2011.asp?lg=&CurPage=4'> 	
+			<img src="images/paginar_antes_.gif" border="0"></a>
+          </td>
+          <td width="50" align="center" class='menu1' >5 / 202</td>
+          <td align="left">
+            <a href='mocion2011.asp?lg=&CurPage=6'><img src="images/paginar_siguiente_.gif" border="0"></a>
+			</td><td align="left">
+            <a href="mocion2011.asp?lg=&CurPage=202"><img src="images/paginar_final_.gif" border="0"></a>
+          </td> 
+        </tr>
+      </table>
+    </td>
+    <td width="20" align="right" valign="bottom"></td>    
+  </tr>
+</table>
+
+</form>
+<script>print_fuentes(75)</script>
+<script language="javascript">ColumnRight()</script>
+<script language="javascript">EndTable()</script>
+
+</body>
+</html>

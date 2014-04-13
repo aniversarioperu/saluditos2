@@ -1,0 +1,906 @@
+
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<meta http-equiv="pragma" content="no-cache">
+<title>Portal Peruano Sociedad y Parlamento</title>
+<link rel="stylesheet" type="text/css" href="/CSS/cat-conozca.css">
+<link rel="stylesheet" type="text/css" href="/CSS/content.css">
+<link rel="stylesheet" type="text/css" href="/mociones/CSS/mocion.css">
+<script language="javaScript" src="/includes/common.js"></script>
+<script language="javaScript" src="/includes/index.js"></script>
+<script language="javaScript" src="/includes/opt_organiza.inc"></script>
+<script language="javaScript" src="/includes/jslegis.js"></script>
+
+
+
+<script>
+function Legislatura(){
+  var sPagina;
+  var aux=self.document.frmPleno1.Legislatura.options[self.document.frmPleno1.Legislatura.selectedIndex].value;
+  document.frmPleno.C_Legislatura.value = aux;
+  document.location.href = "mocion2011.asp?lg=" + aux;
+return;
+}
+function EnviaPeriodo(){
+  Legislatura();
+  //document.frmPleno1.submit();
+
+return;
+}
+
+function BuscarMocion()
+{
+	var texto;
+	var sPagina;
+	texto = frmPleno1.textobuscar.value;
+	if (texto!="") {
+		//frmPleno1.action='mociondetalle2011.asp?CP=' + 2011 + '&NM=' + texto;
+		var win;
+		win = window.open( 'mociondetalle2011.asp?CP=' + 2011 + '&NM=' + texto,'windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=no,width=680,height=480')
+		}
+}
+function Validar_Envio(MiEvento)
+{
+	if(MiEvento.keyCode==13)
+	{
+		BuscarMocion();
+	}
+	
+}
+</script>
+
+
+<!-- ANALISIS GOOGLE -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-174309-25']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+<!-- FIN ANALISIS GOOGLE -->
+
+</head>
+<BODY LEFTMARGIN=0 TOPMARGIN=0 MARGINHEIGHT=0 MARGINWIDTH=0 BGCOLOR="#FFFFFF">
+<script language="javascript">PrintHeader();</script>
+<script language="javascript">ColumnLeft(1,numCategorias,1)</script>
+
+
+
+<!--<form name="frmPleno1" id="frmPleno" action="mocion2011.asp?lg=" method="post">-->
+<form name="frmPleno1" id="frmPleno" method="post">
+  <div align="center">
+  <input type="hidden" id="C_Periodo" name="C_Periodo">
+  <input type="hidden" id="C_Legislatura" name="C_Legislatura">
+    
+    <img src="http://www.congreso.gob.pe/n-imagenes/T-MOCIONES-ORDEN-DIA.gif " border="0">  </div>
+<center>
+      <p><a href="mocion2001.asp"> Ver mociones del periodo 2001-2006</a> <br>
+        <a href="mocion2006.asp">Ver mociones del periodo 2006-2011</a><br>        
+      </p>
+    <p>
+	<table border='0' width=580>
+	<tr>
+	    <td width=350>&nbsp;&nbsp;</td>
+        <td>N&uacute;mero:&nbsp;</td>
+        <td><input type="text" name="textobuscar" value="" size="5" onKeyDown="Validar_Envio(event)">
+          &nbsp;</td><td valign="middle"><input name="buscar" 	value="Buscar" type="button" dir="ltr" onClick=BuscarMocion() ;></td>
+	</tr>
+	</table>
+  </center>
+<br>
+
+		<table width="580" border="0" cellpadding="0" cellspacing="0" align="center">
+		<tr height="1"><td colspan="10" bgcolor="navy"></td></tr>
+		<tr align="center" bgcolor="#efefef" height=25>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width="70"  class='menu1' >FECHA</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width="50"  class='menu1' >NÚMERO</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width="70"  class='menu1' >ESTADO</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td  class='menu1'>SUMILLA</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width="150"  class='menu1' >AUTOR(ES)</td>
+		</tr>
+		<tr height="1"><td colspan="8" bgcolor="ffffff"></td></tr>
+
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>05/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09811</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09811','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Expresar al señor Miguel Meza Shimomura, Presidente del Club Social, Deportivo y Cultural Leoncio Prado, a los asociados fundadores y actuales, el saludo y felicitación por los 60 años de vida institucional y por la destacable labor desempeñada en beneficio del deporte y la juventud.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Kobashigawa Kobashigawa, Ramón</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>04/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09810</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09810','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al señor Emilia Chávez Huaringa, Alcalde del distrito de Cieneguilla y por su intermedio a los regidores, trabajadores, autoridades políticas, policiales, religiosas y a toda la población del distrito, por la conmemorar el 03 de marzo su 44º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Salgado Rubianes, Luz Filomena</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>04/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09809</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09809','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda y reconoce, por su destacada labor profesional y académica al doctor Pedro Mascara Sánchez, Director General del Instituto Nacional Materno Perinatal; médico impulsor del desarrollo y progreso de salud y comprometido con la disminución de la mortandad materna neonatal de nuestro país.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Salgado Rubianes, Luz Filomena,
+Tapia Bernal Segundo Leocadio</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>04/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09808</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09808','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a las mujeres peruanas por celebrar el 08 de marzo el Día Internacional de la Mujer, transcribir la presente moción de saludo a la señora Carmen Omonte Durand, Ministra de la Mujer y Poblaciones Vulnerables; a la señora Irma Victoria Taype Carbajal, Presidenta del Instituto Regional de la Mujer Ayacucho (IRMA); a la Dra. Caby Cevasco Farfán, Directora Ejecutiva de la Asociación Civil Flora Tristán.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Urquizo Maggia José Antonio</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>04/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09807</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09807','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la ciudad de Trujillo por su 479º aniversario de fundación española e instalación de su primer Cabildo.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Urquizo Maggia José Antonio</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>04/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09806</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09806','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a todas las mujeres del Perú que el 08 de marzo celebran el Día Internacional de la Mujer, y quienes gracias a su labor reivindican la lucha de las mujeres heroicas por los derechos sociales de las mujeres del mundo.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Zerillo Bazalar Manuel Salvador</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>04/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09805</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09805','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Ocaña, provincia de Lucanas, departamento de Ayacucho, por celebrar su 85º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Urquizo Maggia José Antonio</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>04/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09804</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09804','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Puyusca, en la provincia de Parinacochas, departamento y región de Ayacucho, por celebrar su 60º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Urquizo Maggia José Antonio</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>04/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09803</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09803','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Andamarca, provincia de Concepción, departamento de Junín, por conmemorar el 05 de marzo 84 años de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Hurtado Zamudio Jesús Pánfilo</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>04/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09802</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09802','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al pueblo de Huamancaca Chico, provincia de Chupaca, departamento de Junín, por conmemorar el 6 de marzo 52 años de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Hurtado Zamudio Jesús Pánfilo</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>04/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09801</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09801','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda y felicita a las distintas generaciones de médicos, enfermeras, técnicas en enfermería, personal administrativo y de apoyo, al conmemorar cincuenta (50) años de servicio ininterrumpido del Hospital regional de Saluda de la ciudadanía del Cusco y de la región; que con esta moción es reconocida por la representación nacional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Inga Vásquez, Leonardo Agustín</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>04/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09800</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09800','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda por el Día Internacional de la Mujer, aquellas mujeres trabajadoras, luchadoras, que se esfuerzan día adía en diversas actividades, tareas comunitarias, laborales, tareas familiares y en especial a todas las mujeres huancavelinas.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Monterola Abregu, Wuilian Alfonso</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>04/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09799</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09799','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de San Juan, de la provincia de Siguas, en el departamento de Áncash, que el 14 de marzo cumple 50 años de creación política, caracterizando a su población por su espíritu progresista.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>López Córdova María Magdalena</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>04/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09798</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09798','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda  al distrito Alfonso Ugarte, de la provincia de Sihuas, en departamento de Áncash, que el 27 de marzo cumple 61 años de creación política, caracterizando a su población por su espíritu progresista.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>López Córdova María Magdalena</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>04/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09797</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09797','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda y reconoce a las mujeres del Perú y del mundo, quienes con su entrega, valentía y esfuerzo contribuyen al desarrollo  de nuestra sociedad, desde cada uno de los roles que ejercen.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Tejada Galindo Sergio Fernando</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>03/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09796</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09796','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Constituir una Comisión Investigadora encargada de investigar las supuestas irregularidades en la asignación de combustible a los vehículos asignados a la Dirección Contra el Terrorismos (DIRCOTE), por el plazo de 90 días.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Bruce Montes de Oca Carlos Ricardo,
+León Romero Luciana Milagros,
+Mulder Bedoya Mauricio,
+Reggiardo Barreto Renzo Andrés,
+Velásquez Quesquén Javier</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>03/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09795</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09795','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda y expresa su reconocimiento a todos los artesanos peruanos en el Día Nacional del Artesano Peruano, por conmemorar el 19 de marzo de cada año.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Neyra Olaychea Ángel</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>03/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09794</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09794','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Huamancaca Chico, provincia de Chupaca, departamento de Junín, por celebrar el 06 de marzo su 52º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Huaire Chuquichaico Casio Faustino</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>03/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09793</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09793','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Andamarca, provincia de Concepción, departamento de Junín, por celebrar el 05 de marzo su 84º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Huaire Chuquichaico Casio Faustino</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>03/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09792</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09792','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a todas las mujeres peruanas por celebrar el Día Internacional de la Mujer, rindiendo homenaje al esfuerzo realizado durante años en la búsqueda de la igualdad de derechos y oportunidades, para hacer realidad su pleno desarrollo personal, familiar, profesional, político, cultural y social.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Apaza Ordóñez Justiniano Romulo</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>03/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09791</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09791','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la mujer peruana y de manera especial a la mujer apurimeña, por celebrar el 08 de marzo el "Día Internacional de la Mujer".</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Reynaga Soto Jhon Arquímides</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>03/03/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09790</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09790','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Aprobar la presente moción de saludo, el Día Internacional de  la Mujer, por conmemorar el 08 de marzo su aniversario, haciendo extensivo el saludo a todas las mujeres del Perú y en especial a la mujer huanuqueña.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Yovera Flores Alejandro</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>28/02/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09789</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09789','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la Universidad Nacional de San Antonio de Abad del Cusco, por celebrar los 322 años de creación institucional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Teves Quispe Julia</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>28/02/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09788</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09788','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Huañec, provincia de Yauyos, por celebrar el 05 de marzo 60 años de haber sido elevado a la categoría de ciudad, y hace votos para que este noble pueblo continúe por la senda del desarrollo y progreso sostenido.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Zerillo Bazalar Manuel Salvador</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>28/02/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09787</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09787','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a todas las mujeres del Perú, en especial a la madrediocenses, en el Día Internacional de la Mujer, reconociendo en ellas su emprendimiento, su fortaleza y capacidad para salir adelante en situaciones adversas y su esfuerzo por mantener a la familia unida  peruana.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Romero Rodriguez, Eulogio Amado</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>28/02/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09786</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09786','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la Corte Superior de Justicia de La Libertad, por cumplir el 26 de marzo su 190º aniversario de vida institucional, alcanzando destacables logros en beneficio de la ciudadanía.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Kobashigawa Kobashigawa, Ramón</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>27/02/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09785</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09785','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a las autoridades civiles, políticas y militares de la provincia de Paita, del departamento de Piura, por conmemorar el 30 de marzo de 2014 su 153º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Huayama Neira Leonidas</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>27/02/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09784</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09784','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a las autoridades civiles, políticas y militares de la provincia de Ayabaca del departamento de Piura, por conmemorar el 30 de marzo de 2014 su 153º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Huayama Neira Leonidas</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>27/02/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09783</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09783','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a las autoridades civiles, políticas y miliares del distrito de Lobitos, de la provincia de Talara, departamento de Piura, por conmemorar el 17 de marzo de 2014 su 59º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Huayama Neira Leonidas</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>27/02/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09782</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09782','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a las autoridades civiles, políticas y militares del distrito de El Alto, de la provincia de Talara, departamento de Piura, por conmemorar el 17 de marzo de 2014 su 59º an9versario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Huayama Neira Leonidas</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>27/02/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09781</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09781','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a las autoridades civiles, políticas y militares de la provincia de Talara, del departamento de Piura, por conmemorar el 16 de marzo de 2014 su 58º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Huayama Neira Leonidas</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>27/02/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09780</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Acuerdo de CD.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09780','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Instar al Poder Ejecutivo para que a la brevedad posible se convoque a un sesión del Consejo de Ministros en la ciudad del Cusco, capital histórica del Perú, a efectos de abordar la problemática de la región Cusco y adoptar las política y medidas que sean convenientes.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>De La Torre Dueñas Hernán</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>27/02/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09779</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09779','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la ciudad de Trujillo, capital del departamento de La Libertad, por la Semana Jubilar, en conmemoración de los 479 años de su fundación española y la instalación del Primer Cabildo, que se celebrará el 4 y 5 de marzo de 2014.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Acuña Núñez, Richard Frank</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>27/02/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09778</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09778','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la  Asociación de Municipalidades del Perú (AMPE) por conmemorar el 04 de marzo de 2014 su trigésimo segundo aniversario de constitución.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Acuña Núñez, Richard Frank</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>27/02/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09777</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09777','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saludar a la Municipalidad distrital de Poroto, provincia de Trujillo, departamento de La Libertad, por conmemorar el 3 de marzo de 2014 su 50º aniversario de creación como distrito.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Acuña Núñez, Richard Frank</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>26/02/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09776</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09776','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Lucre, provincia de Aymaraes, región Apurímac, por conmemorar el 24 de marzo de 2014 su 54º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Reynaga Soto Jhon Arquímides</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>26/02/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09775</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09775','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Progreso, provincia de Grau, región Apurímac, por conmemorar el 17 de marzo de 2014 su 56º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Reynaga Soto Jhon Arquímides</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>26/02/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09774</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09774','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de San Antonio, provincia de Grau, región Apurímac, por conmemorar el 17 de marzo de 2014 su 56º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Reynaga Soto Jhon Arquímides</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>25/02/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09773</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09773','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saludar con mucho cariño al distrito La Merced, de la provincia de Aija, departamento de Áncash, que el 05 de marzo cumple 78 años de creación política, caracterizando a su población por su espíritu progresista.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>López Córdova María Magdalena</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>25/02/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09772</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09772','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saludar con mucho cariño al distrito Cochapeti, de la provincia Huarmey, ubicada en el departamento de Áncash, que el 05 de marzo cumple 78 años de creación política, caracterizando a su población por su espíritu alegre y colaborador.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>López Córdova María Magdalena</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>25/02/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09771</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09771','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saludar merecidamente con mucho cariño y afecto a la provincia de Aija, que el 05 de marzo cumple 78 años de creación política, a la que por sus características el escritor Antonio Raimondi llamó "Perla de las Vertientes", por su ubicación en la Cordillera Negra en la zona nororiental del Perú.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>López Córdova María Magdalena</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>25/02/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09770</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09770','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito Huacllan, de la provincia de Ayja, en el departamento de Áncash, que el 05 de marzo cumple 78 años de creación política, caracterizado a su población por su espíoritu progresista.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>López Córdova María Magdalena</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>25/02/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09769</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09769','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a los integrantes del programa "Los Chistosos" por sus veinte años de programación ininterrumpida, informando al pueblo peruano con profesionalismo y con humor benevolente, en la persona del señor Guillermo Rossini.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Reggiardo Barreto Renzo Andrés</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>24/02/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09768</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Acuerdo de CD.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09768','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Solicitar la concurrencia del Ministro de Agricultura y Riego, señor Milton Von Hesse La Serna , para que informe al Pleno del Congreso, qué medidas ha tomado su despacho para enfrentar todos los riesgos y afectaciones que ha causado la sequía en el año 2013 en la región Piura, Lambayeque y La Libertad; y cómo se va a reparar todos los daños y perjuicios causados a los agricultores y ganaderos de estas regiones.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Acuña Peralta, Virgilio</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>24/02/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09767</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09767','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda a la República de la India por celebrar el 25 de marzo de 2014 el 51º aniversario del establecimiento de las relaciones diplomáticas entre la República del Perú y la República de la India, reiterando sus deseos de estrechar cada vez más las relaciones entre ambos países.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Alcorta Suero María Lourdes Pía Luisa</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>24/02/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09766</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09766','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Independencia, por conmemorar el 16 de marzo su 50º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Alcorta Suero María Lourdes Pía Luisa</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>24/02/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09765</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09765','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Saluda al distrito de Cieneguilla, por conmemorar el 03 de marzo su 44º aniversario de creación política.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Alcorta Suero María Lourdes Pía Luisa</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>20/02/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09762</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09762','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Expresar  su más cordial saludo  y sincera  felicitación a todos los ciudadanos dominicanos residentes en el Perú, al señor Embajador de la República Dominicana, así como a todas las autoridades y personal administrativo de la Embajada de la República Dominicana al celebrar el próximo 27 de febrero su 170ª aniversario de creación.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Tapia Bernal Segundo Leocadio</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>20/02/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09761</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09761','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Expresar el más ferviente saludo y felicitación a las autoridades, docentes, egresados, estudiantes, personal administrativo y de servicios del Instituto Superior Tecnológico Público de Cutervo, al conmemorarse el 21 de febrero su 29ªaniversario de creación institucional.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Tapia Bernal Segundo Leocadio</td>
+			</tr>
+		
+			<tr>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>18/02/2014</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=50 align='left' valign='top' class='menu1'>09760</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=70 align='left' valign='top' class='menu1'>Para ser vista por el C.D.</td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td align = 'justify' valign='top' class='menu1' >
+			<a href="javascript:openWindow('mociondetalle2011.asp?CP=2011&NM=09760','windowname','toolbar=no,location=no,directories=no,status=no,menubar=no,scrollbars=yes,resizable=yes,width=680,height=480')">
+			Expresar al señor Ministro Consejero Yasushi Ando de la Embajada de Japón en Perú, el saludo, felicitación y agradecimiento por la destacable e impecable gestión desempeñada en el Perú.</a></td>
+			<td width="1" bgcolor="ffffff"></td>
+			<td width=150 class='menu1' align='left' valign='top'>Kobashigawa Kobashigawa, Ramón</td>
+			</tr>
+		
+		<tr height="1"><td colspan="10" bgcolor="ffffff"></td></tr>
+  </table>
+			
+<table  width="580" border="0" cellpadding="0" cellspacing="0" align="center">
+  <tr >
+    <td width="12" align="left" valign="bottom"></td>
+    <td class='menu1' ><strong>10059 registro(s) total(es)</strong></td>
+    <td align="right">
+      <table width="180" border="0">
+        <tr>
+          <td align="right"  >
+            <a href="mocion2011.asp?lg=&CurPage=1"><img src="images/paginar_inicio_.gif" border="0"></a>      
+			</td><td>      
+            <a href='mocion2011.asp?lg=&CurPage=5'> 	
+			<img src="images/paginar_antes_.gif" border="0"></a>
+          </td>
+          <td width="50" align="center" class='menu1' >6 / 202</td>
+          <td align="left">
+            <a href='mocion2011.asp?lg=&CurPage=7'><img src="images/paginar_siguiente_.gif" border="0"></a>
+			</td><td align="left">
+            <a href="mocion2011.asp?lg=&CurPage=202"><img src="images/paginar_final_.gif" border="0"></a>
+          </td> 
+        </tr>
+      </table>
+    </td>
+    <td width="20" align="right" valign="bottom"></td>    
+  </tr>
+</table>
+
+</form>
+<script>print_fuentes(75)</script>
+<script language="javascript">ColumnRight()</script>
+<script language="javascript">EndTable()</script>
+
+</body>
+</html>
